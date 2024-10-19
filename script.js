@@ -1,6 +1,3 @@
-// This is the boilerplate code given for you
-// You can modify this code
-// Product data
 // Product data
 const products = [
   { id: 1, name: "Product 1", price: 10 },
@@ -15,7 +12,7 @@ const productList = document.getElementById("product-list");
 const cartList = document.getElementById("cart-list");
 const clearCartBtn = document.getElementById("clear-cart-btn");
 
-	// Utility function to __GET__ cart from session storage
+// Utility function to get cart from session storage
 function getCart() {
   const cart = sessionStorage.getItem("cart");
   return cart ? JSON.parse(cart) : {};
@@ -139,4 +136,3 @@ clearCartBtn.addEventListener("click", () => {
 
 // Initial render
 renderProducts();
-renderCart();
